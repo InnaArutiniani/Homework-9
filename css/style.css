@@ -1,3 +1,51 @@
 header {
 	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+.navdiv {
+	display: inline-flex;
+}
+.navul {
+	display: inline-flex;
+}
+.labels {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+.labels1 {
+	display: inline-flex;
+}
+.grid{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	/**grid-template-rows:**/
+	grid-template-areas: 
+	"r r s"
+	"r r u"
+	"p . m"
+	"t t t"
+}
+.recent{
+	grid-area:r;
+}
+.sponsored {
+	grid-area: s;
+}
+.subscribe{
+	grid-area: u;
+}
+.popular {
+	grid-area: p;
+}
+.media {
+	grid-area: m;
+}
+.trending {
+	grid-area: t;
+}
+.trend{
+	display: inline-flex;
 }
