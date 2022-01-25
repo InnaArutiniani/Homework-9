@@ -247,6 +247,9 @@ header {
 	color: #fcfcfc;
 	border-radius: 20px;
 }
+.pencil {
+  content: "\270F";
+}
 .subscribe{
 	grid-area: u;
 	width: 405px;
@@ -258,7 +261,6 @@ header {
 	padding: 30px 30px;
 }
 form{
-	background-color: white;
 	margin-left: 10px;
 }
 .subscribe h2{
@@ -276,24 +278,117 @@ form{
 }
 .popular {
 	grid-area: p;
+	padding: 20px;
+	background-color: #fcfcfc;
+	box-shadow: 0px 5px 17.5px rgba(0,0,0,0.03137254901960784 );
+	border-radius: 10px;
+	font-family: 'Acumin Pro';
+}
+.popular h2 {
+	font-size: 26px;
+	color: #404040;
+	width: 222px;
+	margin-bottom: 5px;
+}
+.popular h2::before{
+    content: " ";
+    display: inline-block;
+    margin-bottom:3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 90px;
+    background-color: blue;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6294A2), to(#58C3DD));
+    background-image: -o-linear-gradient(#6294A2, #58C3DD);
+    background-image: linear-gradient(#6294A2, #58C3DD);
+    margin-right: 10px;
+}
+.text {
+	margin-top: 25px;
+}
+.text h4{
+	font-size: 13px;
+	color: #404040;
+	opacity: 0.2367600053548813;
+	margin: 4px;
+}
+.text h3{
+	font-size: 20px;
+	color: #404040;
+    margin: 4px;
+}
+.text p{
+	font-size: 15px;
+	color: #404040;
+	margin: 4px;
 }
 .media {
 	grid-area: m;
+	background-image: url("../images/pic5.png");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	font-family: 'Acumin Pro';
 }
-.media img{
-	width: 635px;
-	height: 508px;
+.media h4{
+	font-size: 15px;
+	color: #f0f0f0;
+	opacity: 0.3500419855117798;
+	margin: 5px;
+	margin-top: 45%;
+
+}
+.media h2{
+	font-size: 32px;
+	color: #f0f0f0;
+	/**font-weight: bold;*/
+	margin: 4px;
+}
+.media p{
+	margin: 4px;
+	font-size: 15px;
+	color: #fcfcfc;
+	opacity: 0.5685539841651917;
 }
 .trending {
 	grid-area: t;
+	background-color: #fcfcfc;
+	box-shadow: 0px 5px 17.5px rgba(0,0,0,0.03137254901960784 );
+	border-radius: 10px;
+	font-family: 'Acumin Pro';
+	padding-top: 30px;
+	padding-left: 40px;
+	margin-bottom: 50px;
 }
 .trend{
 	display: inline-flex;
 }
+.art1{
+	width: 100%;
+	margin: 0px 30px;
+}
+.art1 h3{
+	font-size: 20px;
+	color: #404040;
+	margin-bottom: 15px;
+}
+.art1 p{
+	font-size: 15px;
+	color: #404040;
+	margin-bottom: 15px;
+}
 .trend img{
-	width: 377px;
-	height: 156px;
+	width: 100%;
 	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.050980392156862744 );
+	margin-bottom: 20px;
+}
+.trending h2{
+	font-size: 26px;
+	color: #404040;
+	margin-bottom: 30px;
 }
 .trending h2:before {
     content: '';
@@ -303,4 +398,105 @@ form{
     background-color: #6294A2;
     border-radius: 50px;
     margin: 0 6px 0 0;
+}
+footer {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Acumin Pro';
+	padding: 4% 3%;
+}
+.footer-box1 {
+	width: 45%;
+}
+.footer-box1 h3 {
+	font-size: 22px;
+	color: #333333;
+	display: inline-block;
+	margin-top: 20px;
+}
+.footer-box1 h3:before {
+	content: '';
+	display: inline-block;
+	width: 10.36px;
+	height: 10.02px;
+	background-color: #6294A2;
+	border-radius: 50px;
+}
+.footer-box1 h4 {
+	color: #707070;
+	display: inline-block;
+	margin-left: 30px;
+}
+.footer-box1 h5 {
+	font-size: 16px;
+	color: #333333;
+	margin-top: 20px;
+}
+.footer-box1 p {
+	font-size: 15px;
+	color: #707070;
+	margin-top: 20px;
+}
+.footer-box2 {
+	margin-top: 15px;
+}
+.footer-box2 div {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.footer-box2 h4 {
+	font-size: 15px;
+	color: #333333;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.footer-box2 a {
+	font-size: 15px;
+	color: #707070;
+	margin-top: 8px;
+}
+.footer-box3 {
+	margin-top: 15px;
+}
+.footer-box3 div {
+	width: 82px;
+	height: 160px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.footer-box3 h4 {
+	font-size: 15px;
+	color: #333333;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.footer-box3 a {
+	font-size: 15px;
+	color: #707070;
+	margin-top: 8px;
+	margin-bottom: 
+}
+.footer-box4 {
+	margin-top: 25px;
+}
+.footer-box4 h4 {
+	font-size: 15px;
+	color: #333333;
+	margin-bottom: 10px;
+
+}
+ .footer-logo {
+	margin-top: 10px;
+}
+.footer-box4 h5 {
+	font-size: 15px;
+	color: #333333;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.last-link {
+	font-size: 15px;
+	color: #707070;
 }
